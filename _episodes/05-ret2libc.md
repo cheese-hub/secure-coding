@@ -249,7 +249,7 @@ Let us concentrate on the stack while calling foo(). We can ignore the stack bef
 ### Leaving foo()
 Now the control has passed to the function foo(). Let's see what happens to the stack when the function returns.
 
-[]({{ page.root }}/fig/ret2libc/figure1.png)
+![]({{ page.root }}/fig/ret2libc/figure1.png)
 
 * **Line 16:** leave: This instruction implicitly performs two instructions (it was a macro in earlier x86 releases, but was made into an instruction later):
 
