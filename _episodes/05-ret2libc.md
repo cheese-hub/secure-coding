@@ -1,7 +1,7 @@
 ---
 title: "Return-to-libc Attack"
-teaching: 10
-exercises: 30
+teaching: 60
+exercises: 200
 questions:
 - "What is the return-to-libc attack?"
 - "Why is it dangerous?"
