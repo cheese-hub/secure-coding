@@ -24,6 +24,8 @@ In this lab, students are given a program with a buffer-overflow vulnerability; 
 
 **Readings and related topics.** Detailed coverage of the return-to-libc attack can be found in Chapter 5 of the SEED book, *Computer Security: A Hands-on Approach*, by Wenliang Du. A topic related to this lab is the general buffer-overflow attack, which is covered in a separate SEED lab, as well as in Chapter 4 of the SEED book.
 
+This lab/documentation was provided by the [SEED Project](https://seedsecuritylabs.org/). There is only one container needed for this demonstration.
+
 ## Demonstration
 
 ### Turning off Countermeasures
