@@ -33,8 +33,13 @@ Ubuntu and other Linux distributions have implemented several security mechanism
 
 **Address Space Randomization.** Ubuntu and several other Linux-based systems uses address space randomization [?] to randomize the starting address of heap and stack. This makes guessing the exact addresses difficult; guessing addresses is one of the critical steps of buffer-overflow attacks. In this lab, we disable this feature using the following command:
 
+> ## Using setarch
+>
+> Because we are using containers, you will not be able to change kernel settings. This command will disable randomization and open a new shell.
+{: .callout}
+
 ```bash
-$ sudo sysctl -w kernel.randomize_va_space=0
+setarch $(uname -m) -R /bin/sh
 ```
 
 **The StackGuard Protection Scheme.** The GCC compiler implements a security mechanism called StackGuard to prevent buffer overflows. In the presence of this protection, buffer overflow attacks will not work. We can disable this protection during the compilation using the -fno-stack-protector option. For example, to compile a program example.c with StackGuard disabled, we can do the following:
